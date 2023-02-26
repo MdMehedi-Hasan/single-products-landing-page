@@ -82,6 +82,86 @@ const Center = () => {
                     </div>
                 </div>
             </section>
+            <section className='container mx-auto'>
+                <div className='flex justify-between w-full'>
+                    <div><img src={image} alt=""/></div>
+                    <div>
+                        <form>
+                            <div className='flex gap-5'>
+                                <div class="form-control w-full max-w-xs">
+                                    <label class="label">
+                                        <span class="label-text">Full Name</span>
+                                    </label>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                                </div>
+                                <div class="form-control w-full max-w-xs">
+                                    <label class="label">
+                                        <span class="label-text">Phone Number</span>
+                                    </label>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                                </div>
+                            </div>
+                            <div class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Email Address</span>
+                                </label>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            </div>
+                            <div class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text">Delivery Address</span>
+                                </label>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            </div>
+                            <div className='flex gap-5'>
+                                <div class="form-control w-full max-w-xs">
+                                    <label class="label">
+                                        <span class="label-text">City</span>
+                                    </label>
+                                    <select class="select select-bordered">
+                                        <option disabled selected>Pick one</option>
+                                        <option>Star Wars</option>
+                                        <option>Harry Potter</option>
+                                        <option>Lord of the Rings</option>
+                                        <option>Planet of the Apes</option>
+                                        <option>Star Trek</option>
+                                    </select>
+                                    {/* <label class="label">
+                                        <span class="label-text-alt">Alt label</span>
+                                        <span class="label-text-alt">Alt label</span>
+                                    </label> */}
+                                </div>
+                                <div class="form-control w-full max-w-xs">
+                                    <label class="label">
+                                        <span class="label-text">Area</span>
+                                    </label>
+                                    <select class="select select-bordered">
+                                        <option disabled selected>Pick one</option>
+                                        <option>Star Wars</option>
+                                        <option>Harry Potter</option>
+                                        <option>Lord of the Rings</option>
+                                        <option>Planet of the Apes</option>
+                                        <option>Star Trek</option>
+                                    </select>
+                                    {/* <label class="label">
+                                        <span class="label-text-alt">Alt label</span>
+                                        <span class="label-text-alt">Alt label</span>
+                                    </label> */}
+                                </div>
+                            </div>
+                            <div className='flex items-end justify-between'>
+                                <div class="form-control w-full max-w-xs">
+                                    <label class="label">
+                                        <span class="label-text">Select Qty</span>
+                                    </label>
+                                    <input type="number" placeholder="1" class="input input-bordered w-3/12" />
+                                </div>
+                                <button type="" className='btn btn-success'>Place Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
