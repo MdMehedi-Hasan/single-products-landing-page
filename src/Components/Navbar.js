@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import watch from '../Assets/smart-watch1.png'
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
@@ -32,7 +33,7 @@ const Navbar = () => {
                             <li><a>Order Now</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost normal-case text-xl p-0">BOGO</a>
+                    <a class="btn btn-ghost normal-case text-xl p-0"><img src={watch} alt=""/></a>
                 </div>
                 <div class="navbar-end hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">

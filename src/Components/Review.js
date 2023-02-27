@@ -8,6 +8,7 @@ import review1 from '../Assets/review/11.png'
 import review2 from '../Assets/review/22.png'
 import review3 from '../Assets/review/33.png'
 import review4 from '../Assets/review/44.png'
+import { Icon } from '@iconify/react';
 
 const Review = () => {
     return (
@@ -30,7 +31,7 @@ const Review = () => {
                             </div>
                         </div>
                         <h1 className='pb-5 text-xl font-semibold text-gray-500'>Mrs. Angelina Jolly</h1>
-                        <p className='pb-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p className='pb-10'><Icon icon="bxs:quote-alt-left" className='inline-block -mt-3 mr-1 text-gray-500'/>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.<Icon icon="bxs:quote-alt-right" className='inline-block -mb-1 ml-1 text-gray-500'/></p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
@@ -41,7 +42,7 @@ const Review = () => {
                             </div>
                         </div>
                         <h1 className='pb-5 text-xl font-semibold text-gray-500'>Mrs. Angelina Jolly</h1>
-                        <p className='pb-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p className='pb-10'><Icon icon="bxs:quote-alt-left" className='inline-block -mt-3 mr-1 text-gray-500'/>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.<Icon icon="bxs:quote-alt-right" className='inline-block -mb-1 ml-1 text-gray-500'/></p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
@@ -52,7 +53,7 @@ const Review = () => {
                             </div>
                         </div>
                         <h1 className='pb-5 text-xl font-semibold text-gray-500'>Mrs. Angelina Jolly</h1>
-                        <p className='pb-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p className='pb-10'><Icon icon="bxs:quote-alt-left" className='inline-block -mt-3 mr-1 text-gray-500'/>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.<Icon icon="bxs:quote-alt-right" className='inline-block -mb-1 ml-1 text-gray-500'/></p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
@@ -63,7 +64,7 @@ const Review = () => {
                             </div>
                         </div>
                         <h1 className='pb-5 text-xl font-semibold text-gray-500'>Mrs. Angelina Jolly</h1>
-                        <p className='pb-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p className='pb-10'><Icon icon="bxs:quote-alt-left" className='inline-block -mt-3 mr-1 text-gray-500'/>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.<Icon icon="bxs:quote-alt-right" className='inline-block -mb-1 ml-1 text-gray-500'/></p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
@@ -74,7 +75,7 @@ const Review = () => {
                             </div>
                         </div>
                         <h1 className='pb-5 text-xl font-semibold text-gray-500'>Mrs. Angelina Jolly</h1>
-                        <p className='pb-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p className='pb-10'><Icon icon="bxs:quote-alt-left" className='inline-block -mt-3 mr-1 text-gray-500'/>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.<Icon icon="bxs:quote-alt-right" className='inline-block -mb-1 ml-1 text-gray-500'/></p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
@@ -85,7 +86,7 @@ const Review = () => {
                             </div>
                         </div>
                         <h1 className='pb-5 text-xl font-semibold text-gray-500'>Mrs. Angelina Jolly</h1>
-                        <p className='pb-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p className='pb-10'><Icon icon="bxs:quote-alt-left" className='inline-block -mt-3 mr-1 text-gray-500'/>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.<Icon icon="bxs:quote-alt-right" className='inline-block -mb-1 ml-1 text-gray-500'/></p>
                     </div>
                 </SwiperSlide>
             </Swiper>
