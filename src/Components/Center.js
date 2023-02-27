@@ -5,57 +5,52 @@ import connect from '../Assets/analytics.png'
 import confiqure from '../Assets/management.png'
 import trophy from '../Assets/trophy.png'
 import map from '../Assets/map.jpg'
+import Review from './Review';
 
 const Center = () => {
     return (
         <div className=''>
-            <section className='flex justify-center'>
-                <div className='container flex justify-center'>
+            <section className='flex justify-center py-40'>
+                <div className='container flex justify-center gap-5'>
                     <div class="card w-auto bg-base-100 shadow-xl text-center">
-                        <figure><img src={connect} alt="Connect" /></figure>
+                        <figure><img src={connect} alt="Connect" className='w-24'/></figure>
                         <div class="card-body">
-                            <h2 class="">Connect Device</h2>
+                            <h2 class="text-2xl font-semibold">Connect Device</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
-                            <div class="card-actions justify-end">
-                            </div>
                         </div>
                     </div>
                     <div class="card w-auto bg-base-100 shadow-xl text-center">
-                        <figure><img src={confiqure} alt="confiqure" /></figure>
+                        <figure><img src={confiqure} alt="confiqure" className='w-24'/></figure>
                         <div class="card-body">
-                            <h2 class="">Configure it</h2>
+                            <h2 class="text-2xl font-semibold">Configure it</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
-                            <div class="card-actions justify-end">
-                            </div>
                         </div>
                     </div>
                     <div class="card w-auto bg-base-100 shadow-xl text-center">
-                        <figure><img src={trophy} alt="trophy" /></figure>
+                        <figure><img src={trophy} alt="trophy" className='w-24'/></figure>
                         <div class="card-body">
-                            <h2 class="">Yay! Done</h2>
+                            <h2 class="text-2xl font-semibold">Yay! Done</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
-                            <div class="card-actions justify-end">
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className='container mx-auto'>
-                <div className='flex'>
-                    <div className='flex flex-col gap-10'>
-                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-500'><Icon icon="ion:watch" className='text-6xl' />
+            <section className='flex justify-center bg-base-200 py-40'>
+                <div className='flex container'>
+                    <div className='flex flex-col gap-20'>
+                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
                             <div>
                                 <h1 className='pt-0 mt-0'>Reliable</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
-                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-500'><Icon icon="ion:watch" className='text-6xl' />
+                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
                             <div>
                                 <h1 className='pt-0 mt-0'>Reliable</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
-                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-500'><Icon icon="ion:watch" className='text-6xl' />
+                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
                             <div>
                                 <h1 className='pt-0 mt-0'>Reliable</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
@@ -63,20 +58,20 @@ const Center = () => {
                         </div>
                     </div>
                     <div className='flex justify-center items-center'><img src={image} alt="" /></div>
-                    <div className='flex flex-col gap-10'>
-                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-500'><Icon icon="ion:watch" className='text-6xl' />
+                    <div className='flex flex-col gap-20'>
+                        <div className='flex justify-start border-l-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
                             <div>
                                 <h1 className='pt-0 mt-0'>Reliable</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
-                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-500'><Icon icon="ion:watch" className='text-6xl' />
+                        <div className='flex justify-start border-l-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
                             <div>
                                 <h1 className='pt-0 mt-0'>Reliable</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
-                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-500'><Icon icon="ion:watch" className='text-6xl' />
+                        <div className='flex justify-start border-l-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
                             <div>
                                 <h1 className='pt-0 mt-0'>Reliable</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
@@ -171,7 +166,7 @@ const Center = () => {
                                     </label> */}
                                 </div>
                             </div>
-                            <div className='flex items-end justify-between'>
+                            <div id='test' className='flex items-end justify-between'>
                                 <div class="form-control w-full max-w-xs">
                                     <label class="label">
                                         <span class="label-text">Select Qty</span>
@@ -183,6 +178,9 @@ const Center = () => {
                         </form>
                     </div>
                 </div>
+            </section>
+            <section>
+                <Review/>
             </section>
         </div>
     );
