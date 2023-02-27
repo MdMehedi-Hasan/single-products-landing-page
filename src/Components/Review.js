@@ -11,7 +11,7 @@ import review4 from '../Assets/review/44.png'
 
 const Review = () => {
     return (
-        <div className='pt-40 bg-base-200 mb-40'>
+        <div className='pt-20 bg-base-200 mb-40'>
             <Swiper
                 slidesPerView={1}
                 // spaceBetween={30}
