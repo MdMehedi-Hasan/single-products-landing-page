@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
-import image from '../Assets/straight-watch.png'
+import image from '../Assets/straight-watch1.png'
 import connect from '../Assets/analytics.png'
 import confiqure from '../Assets/management.png'
 import trophy from '../Assets/trophy.png'
@@ -14,6 +14,13 @@ import idea from '../Assets/light-bulb.png'
 import bills from '../Assets/invoice.png'
 import tech from '../Assets/technology.png'
 import heart from '../Assets/love.png'
+
+import key from '../Assets/key.png'
+import voice from '../Assets/voice-record.png'
+import apps from '../Assets/copy.png'
+import like from '../Assets/like.png'
+import person from '../Assets/user.png'
+import watch from '../Assets/smart-watch.png'
 const Center = () => {
     return (
         <div className='mt-[-40px] border'>
@@ -48,42 +55,42 @@ const Center = () => {
                     <p className='text-center text-2xl text-gray-500 w-6/12 mx-auto py-4'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     <div className='grid grid-cols-3 pt-20 pb-24 gap-10'>
                         <div className='flex justify-start gap-3'>
-                            <img src={gps} alt="" className='w-12 h-12'/>
+                            <img src={gps} alt="" className='w-12 h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-semibold'>GPS Tracking</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
                         <div className='flex justify-start gap-3'>
-                        <img src={security} alt="" className='w-12 h-12'/>
+                            <img src={security} alt="" className='w-12 h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-semibold'>Security first</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
                         <div className='flex justify-start gap-3'>
-                        <img src={idea} alt="" className='w-12 h-12'/>
+                            <img src={idea} alt="" className='w-12 h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-semibold'>Innovative idea</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
                         <div className='flex justify-start gap-3'>
-                        <img src={bills} alt="" className='w-12 h-12'/>
+                            <img src={bills} alt="" className='w-12 h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-semibold'>Save your bills</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
                         <div className='flex justify-start gap-3'>
-                        <img src={tech} alt="" className='w-12 h-12'/>
+                            <img src={tech} alt="" className='w-12 h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-semibold'>Proven technology</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
                         <div className='flex justify-start gap-3'>
-                        <img src={heart} alt="" className='w-12 h-12'/>
+                            <img src={heart} alt="" className='w-12 h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-semibold'>Heartbeat Analysis</h1>
                                 <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
@@ -106,45 +113,51 @@ const Center = () => {
                 </div>
             </section>
             <section className='flex justify-center bg-base-200 py-40'>
-                <div className='flex container'>
-                    <div className='flex flex-col gap-20'>
-                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
+                <div className='grid grid-cols-3 items-center container'>
+                    <div className='flex flex-col gap-10'>
+                        <div className='flex gap-3 justify-start border-r-2 border-b-2 p-5 border-gray-200'>
+                            <img src={key} alt="" className='h-12' />
                             <div>
-                                <h1 className='pt-0 mt-0'>Reliable</h1>
-                                <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <h1 className='pt-0 mt-0 text-xl font-bold'>Fast and secure</h1>
+                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
-                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
+                        <div className='flex gap-3 justify-start border-r-2 border-b-2 p-5 border-gray-200'>
+                            <img src={voice} alt="" className='h-12' />
                             <div>
-                                <h1 className='pt-0 mt-0'>Reliable</h1>
-                                <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <h1 className='pt-0 mt-0 text-xl font-bold'>Voice Assistant</h1>
+                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
-                        <div className='flex justify-start border-r-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
+                        <div className='flex gap-3 justify-start border-r-2 border-b-2 p-5 border-gray-200'>
+                            <img src={apps} alt="" className='h-12' />
                             <div>
-                                <h1 className='pt-0 mt-0'>Reliable</h1>
-                                <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <h1 className='pt-0 mt-0 text-xl font-bold'>Apps you love</h1>
+                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
                     </div>
                     <div className='flex justify-center items-center'><img src={image} alt="" /></div>
-                    <div className='flex flex-col gap-20'>
-                        <div className='flex justify-start border-l-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
+                    <div className='flex flex-col gap-10'>
+                        <div className='flex gap-3 justify-start border-l-2 border-b-2 p-5 border-gray-200'>
+                            <img src={like} alt="" className='h-12' />
                             <div>
-                                <h1 className='pt-0 mt-0'>Reliable</h1>
-                                <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <h1 className='pt-0 mt-0 text-xl font-bold'>Stay in touch</h1>
+                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
-                        <div className='flex justify-start border-l-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
+                        <div className='flex gap-3 justify-start border-l-2 border-b-2 p-5 border-gray-200'>
+                            <img src={person} alt="" className='h-12' />
                             <div>
-                                <h1 className='pt-0 mt-0'>Reliable</h1>
-                                <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <h1 className='pt-0 mt-0 text-xl font-bold'>Designed for you</h1>
+                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
-                        <div className='flex justify-start border-l-2 border-b-2 p-5 border-gray-200'><Icon icon="ion:watch" className='text-6xl' />
+                        <div className='flex gap-3 justify-start border-l-2 border-b-2 p-5 border-gray-200'>
+                            <img src={watch} alt="" className='h-12' />
                             <div>
-                                <h1 className='pt-0 mt-0'>Reliable</h1>
-                                <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <h1 className='pt-0 mt-0 text-xl font-bold'>Precise timepiece</h1>
+                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             </div>
                         </div>
                     </div>
@@ -154,42 +167,68 @@ const Center = () => {
                 <div className='container'>
                     <h1 className='text-center text-6xl font-semibold'>TECH SPECS</h1>
                     <p className='text-center text-2xl text-gray-500 w-6/12 mx-auto py-4'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <div className='grid grid-cols-3 pt-20 pb-24'>
-                        <div>
-                            <h1 className='pt-0 mt-0'>Reliable</h1>
-                            <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                    <div className='grid grid-cols-3 pt-20 pb-24 gap-x-20 gap-y-10'>
+                        <div className='border-b mx-16'>
+                            <h1 className='text-2xl font-semibold'>Compatibility</h1>
+                            <p className='font-sans text-gray-500'>iPhone iOS 7 & up
+                                Android 4.3 & uptexts
+                                Bluetooth 4.0
+                                Notification for calls / texts</p>
                         </div>
-                        <div>
-                            <h1 className='pt-0 mt-0'>Reliable</h1>
-                            <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <div className='border-b mx-16'>
+                            <h1 className='text-2xl font-semibold'>App</h1>
+                            <p className='font-sans text-gray-500'>Set daily goals
+                                Analyze history
+                                Sync to phone & cloud
+                                Connect to Apple health kit
+                                Connect to Google fit
+                                Watch firmware upgrade</p>
                         </div>
-                        <div>
-                            <h1 className='pt-0 mt-0'>Reliable</h1>
-                            <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <div className='border-b mx-16'>
+                            <h1 className='text-2xl font-semibold'>Vibration silent alarms</h1>
+                            <p className='font-sans text-gray-500'>Phone notifications
+                                Daily goal reached
+                                Daily wake-up alarm
+                                Location assistance
+                                Accessiblity features</p>
                         </div>
-                        <div>
-                            <h1 className='pt-0 mt-0'>Reliable</h1>
-                            <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <div className='border-b mx-16'>
+                            <h1 className='text-2xl font-semibold'>Watch</h1>
+                            <p className='font-sans text-gray-500'>12.6mm thickness
+                                3.16L stainless steel case
+                                40mm diameter
+                                5 ATM water resistant
+                                Sapphire glass crystal</p>
                         </div>
-                        <div>
-                            <h1 className='pt-0 mt-0'>Reliable</h1>
-                            <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <div className='border-b mx-16'>
+                            <h1 className='text-2xl font-semibold'>Straps</h1>
+                            <p className='font-sans text-gray-500'>Italian leather with natural lining
+                                Comfort sport fabric
+                                Quick-release pins</p>
                         </div>
-                        <div>
-                            <h1 className='pt-0 mt-0'>Reliable</h1>
-                            <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <div className='border-b mx-16'>
+                            <h1 className='text-2xl font-semibold'>Activity tracking</h1>
+                            <p className='font-sans text-gray-500'>Step counting
+                                Distance
+                                Calories burned
+                                Swimming (strokes)</p>
                         </div>
-                        <div>
-                            <h1 className='pt-0 mt-0'>Reliable</h1>
-                            <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <div className='border-b mx-16'>
+                            <h1 className='text-2xl font-semibold'>Timekeeping</h1>
+                            <p className='font-sans text-gray-500'>Swiss ETA movement
+                                Accurate, reliable</p>
                         </div>
-                        <div>
-                            <h1 className='pt-0 mt-0'>Reliable</h1>
-                            <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <div className='border-b mx-16'>
+                            <h1 className='text-2xl font-semibold'>Battery power</h1>
+                            <p className='font-sans text-gray-500'>Standard CR2025 6+ months
+                                Standard 364 for timekeeping 5+ years
+                                Solar Power available as aupgrade</p>
                         </div>
-                        <div>
-                            <h1 className='pt-0 mt-0'>Reliable</h1>
-                            <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <div className='border-b mx-16'>
+                            <h1 className='text-2xl font-semibold'>Sensors</h1>
+                            <p className='font-sans text-gray-500'>MEMS 3-axis accelerometer
+                                Highly accurate
+                                Low power consumption</p>
                         </div>
                     </div>
                 </div>
