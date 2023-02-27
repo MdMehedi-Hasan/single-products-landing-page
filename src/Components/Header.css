@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 .title{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-family: 'Roboto Slab', serif;
 }
 /* #header{
     background: linear-gradient(to left, #a7f0ba 50%, #a7f0ba00 50%);
