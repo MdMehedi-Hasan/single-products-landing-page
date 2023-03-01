@@ -25,8 +25,8 @@ const Review = () => {
             >
                 <SwiperSlide className='pb-10 pt-2'>
                     <div className='w-[620px] mx-auto'>
-                        <div class="avatar">
-                            <div class="w-24 rounded-full ring ring-success">
+                        <div className="avatar">
+                            <div className="w-24 rounded-full ring ring-success">
                                 <img src={review1} alt='client' />
                             </div>
                         </div>
@@ -36,8 +36,8 @@ const Review = () => {
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
                     <div className='w-[620px] mx-auto'>
-                        <div class="avatar">
-                            <div class="w-24 rounded-full ring ring-success">
+                        <div className="avatar">
+                            <div className="w-24 rounded-full ring ring-success">
                                 <img src={review2} alt='client' />
                             </div>
                         </div>
@@ -47,8 +47,8 @@ const Review = () => {
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
                     <div className='w-[620px] mx-auto'>
-                        <div class="avatar">
-                            <div class="w-24 rounded-full ring ring-success">
+                        <div className="avatar">
+                            <div className="w-24 rounded-full ring ring-success">
                                 <img src={review3} alt='client' />
                             </div>
                         </div>
@@ -58,8 +58,8 @@ const Review = () => {
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
                     <div className='w-[620px] mx-auto'>
-                        <div class="avatar">
-                            <div class="w-24 rounded-full ring ring-success">
+                        <div className="avatar">
+                            <div className="w-24 rounded-full ring ring-success">
                                 <img src={review4} alt='client' />
                             </div>
                         </div>
@@ -69,8 +69,8 @@ const Review = () => {
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
                     <div className='w-[620px] mx-auto'>
-                        <div class="avatar">
-                            <div class="w-24 rounded-full ring ring-success">
+                        <div className="avatar">
+                            <div className="w-24 rounded-full ring ring-success">
                                 <img src={review2} alt='client' />
                             </div>
                         </div>
@@ -80,8 +80,8 @@ const Review = () => {
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
                     <div className='w-[620px] mx-auto'>
-                        <div class="avatar">
-                            <div class="w-24 rounded-full ring ring-success">
+                        <div className="avatar">
+                            <div className="w-24 rounded-full ring ring-success">
                                 <img src={review3} alt='client' />
                             </div>
                         </div>

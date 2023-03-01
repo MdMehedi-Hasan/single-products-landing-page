@@ -21,29 +21,63 @@ import apps from '../Assets/copy.png'
 import like from '../Assets/like.png'
 import person from '../Assets/user.png'
 import watch from '../Assets/smart-watch.png'
+import './Center.css'
 const Center = () => {
+    const placeOrder = (event) => {
+        event.preventDefault()
+
+        const data = {
+            name: event.target.name.value,
+            phone : event.target.phone.value,
+            email : event.target.email.value,
+            address : event.target.address.value,
+            city : event.target.city.value,
+            area : event.target.area.value,
+            qty : event.target.qty.value,
+        }
+
+        console.log(data.name);
+        if(!data.name){
+            console.log('empty');
+        }
+
+        /* fetch("http://localhost:5000/order", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("Success:", data);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            }); */
+    }
     return (
         <div className='mt-[-40px] border'>
             <section className='flex justify-center pb-40 bg-base-200'>
                 <div className='container flex justify-center gap-5'>
-                    <div class="card w-auto bg-white shadow-xl text-center py-5">
+                    <div className="card w-auto bg-white shadow-xl text-center py-5">
                         <figure><img src={connect} alt="Connect" className='w-24' /></figure>
-                        <div class="card-body">
-                            <h2 class="text-2xl font-semibold">Connect Device</h2>
+                        <div className="card-body">
+                            <h2 className="text-2xl font-semibold">Connect Device</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
                         </div>
                     </div>
-                    <div class="card w-auto bg-white shadow-xl text-center py-5">
+                    <div className="card w-auto bg-white shadow-xl text-center py-5">
                         <figure><img src={confiqure} alt="confiqure" className='w-24' /></figure>
-                        <div class="card-body">
-                            <h2 class="text-2xl font-semibold">Configure it</h2>
+                        <div className="card-body">
+                            <h2 className="text-2xl font-semibold">Configure it</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
                         </div>
                     </div>
-                    <div class="card w-auto bg-white shadow-xl text-center py-5">
+                    <div className="card w-auto bg-white shadow-xl text-center py-5">
                         <figure><img src={trophy} alt="trophy" className='w-24' /></figure>
-                        <div class="card-body">
-                            <h2 class="text-2xl font-semibold">Yay! Done</h2>
+                        <div className="card-body">
+                            <h2 className="text-2xl font-semibold">Yay! Done</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
                         </div>
                     </div>
@@ -238,9 +272,9 @@ const Center = () => {
             </section>
             <section id="order" className=' flex justify-center py-40'>
                 <div className='container flex justify-center gap-40'>
-                    {/* <div class="card image-full">
+                    {/* <div className="card image-full">
                         <figure><img src={map} alt="map" /></figure>
-                        <div class="flex items-center justify-center">
+                        <div className="flex items-center justify-center">
                             <p className='w-96 text-black'>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
                         </div>
                     </div> */}
@@ -259,77 +293,61 @@ const Center = () => {
                         </div>
                     </div>
                     <div className='w-6/12'>
-                        <form>
+                        <form onSubmit={(e)=>placeOrder(e)}>
                             <div className='flex gap-5'>
-                                <div class="form-control w-full ">
-                                    <label class="label">
-                                        <span class="label-text">Full Name</span>
+                                <div className="form-control w-full ">
+                                    <label className="label">
+                                        <span className="label-text">Full Name <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="Type here" class="input w-full bg-gray-100" />
+                                    <input type="text" placeholder="Type here" className="input w-full bg-gray-100" name="name" />
                                 </div>
-                                <div class="form-control w-full ">
-                                    <label class="label">
-                                        <span class="label-text">Phone Number</span>
+                                <div className="form-control w-full ">
+                                    <label className="label">
+                                        <span className="label-text">Phone Number <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="Type here" class="input w-full bg-gray-100" />
+                                    <input type="number" placeholder="Type here" className="input w-full bg-gray-100 number" name="phone" onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()} min="0"/>
                                 </div>
                             </div>
-                            <div class="form-control w-full">
-                                <label class="label">
-                                    <span class="label-text">Email Address</span>
+                            <div className="form-control w-full">
+                                <label className="label">
+                                    <span className="label-text">Email Address <span className='text-red-600'>&#42;</span></span>
                                 </label>
-                                <input type="text" placeholder="Type here" class="input w-full bg-gray-100" />
+                                <input type="text" placeholder="Type here" className="input w-full bg-gray-100" name="email" />
                             </div>
-                            <div class="form-control w-full">
-                                <label class="label">
-                                    <span class="label-text">Delivery Address</span>
+                            <div className="form-control w-full">
+                                <label className="label">
+                                    <span className="label-text">Delivery Address <span className='text-red-600'>&#42;</span></span>
                                 </label>
-                                <input type="text" placeholder="Type here" class="input w-full bg-gray-100" />
+                                <input type="text" placeholder="Type here" className="input w-full bg-gray-100" name="address" />
                             </div>
                             <div className='flex gap-5'>
-                                <div class="form-control w-full">
-                                    <label class="label">
-                                        <span class="label-text">City</span>
+                                <div className="form-control w-full">
+                                    <label className="label">
+                                        <span className="label-text">City <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <select class="select bg-gray-100">
-                                        <option disabled selected>Pick one</option>
-                                        <option>Star Wars</option>
-                                        <option>Harry Potter</option>
-                                        <option>Lord of the Rings</option>
-                                        <option>Planet of the Apes</option>
-                                        <option>Star Trek</option>
-                                    </select>
-                                    {/* <label class="label">
-                                        <span class="label-text-alt">Alt label</span>
-                                        <span class="label-text-alt">Alt label</span>
-                                    </label> */}
+                                    <input type="text" placeholder="Type here" className="input w-full bg-gray-100" name="city" />
                                 </div>
-                                <div class="form-control w-full">
-                                    <label class="label">
-                                        <span class="label-text">Area</span>
+                                <div className="form-control w-full">
+                                    <label className="label">
+                                        <span className="label-text">Area <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <select class="select bg-gray-100">
-                                        <option disabled selected>Pick one</option>
-                                        <option>Star Wars</option>
-                                        <option>Harry Potter</option>
-                                        <option>Lord of the Rings</option>
-                                        <option>Planet of the Apes</option>
-                                        <option>Star Trek</option>
-                                    </select>
-                                    {/* <label class="label">
-                                        <span class="label-text-alt">Alt label</span>
-                                        <span class="label-text-alt">Alt label</span>
-                                    </label> */}
+                                    <input type="text" placeholder="Type here" className="input w-full bg-gray-100" name="area" />
+                                    {/* <label className="label"></label> */}
+                                    <label className="label">
+                                        <span className="label-text-alt"></span>
+                                        <span className="label-text-alt">Example: Dhanmondi</span>
+                                    </label>
                                 </div>
                             </div>
                             <div id='test' className='flex items-end justify-between'>
-                                <div class="form-control w-full max-w-xs">
-                                    <label class="label">
-                                        <span class="label-text">Select Qty</span>
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label">
+                                        <span className="label-text">Select Qty <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="number" placeholder="1" class="input input-bordered w-3/12 bg-gray-100" />
+                                    <input type="number" placeholder="1" className="input input-bordered w-3/12 bg-gray-100" name="qty" min="0"/>
                                 </div>
-                                <button type="" className='btn btn-success text-white'>Place Order</button>
+                                {/* <input type="button" name="" className='border' value="button"/> */}
+                                <input type="submit" className='btn btn-success text-white' value="Place Order" />
                             </div>
                         </form>
                     </div>
