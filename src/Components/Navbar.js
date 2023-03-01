@@ -24,13 +24,13 @@ const Navbar = () => {
                         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a href='/'>Home</a></li>
                             <li tabindex="0">
-                                <a class="justify-between">
+                                <a class="justify-between" href='#description'>
                                     About
                                 </a>
                             </li>
-                            <li><a>Reviews</a></li>
-                            <li><a>Contact</a></li>
-                            <li><a>Order Now</a></li>
+                            <li><a href='#reviews'>Reviews</a></li>
+                            <li><a href='#order'>Contact</a></li>
+                            <li><a href='#order'>Order Now</a></li>
                         </ul>
                     </div>
                     <a class="btn btn-ghost normal-case text-xl p-0"><img src={watch} alt=""/></a>
@@ -39,13 +39,13 @@ const Navbar = () => {
                     <ul class="menu menu-horizontal px-1">
                         <li><a href='#' >Home</a></li>
                         <li tabindex="0">
-                            <a>
+                            <a href='#description'>
                                 About
 
                             </a>
                         </li>
-                        <li><a>Reviews</a></li>
-                        <li><a>Contact</a></li>
+                        <li><a href='#reviews'>Reviews</a></li>
+                        <li><a href='#order'>Contact</a></li>
                         <li><a href='#order'>Order Now</a></li>
                     </ul>
                 </div>

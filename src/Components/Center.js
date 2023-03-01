@@ -99,7 +99,7 @@ const Center = () => {
                     </div>
                 </div>
             </section>
-            <section className='flex justify-center'>
+            <section id='description' className='flex justify-center'>
                 <div className='container grid grid-cols-2 items-center py-40'>
                     <div>
                         <img src={watches} alt="watches" />
@@ -233,7 +233,7 @@ const Center = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section id='reviews'>
                 <Review />
             </section>
             <section id="order" className=' flex justify-center py-40'>
@@ -329,7 +329,7 @@ const Center = () => {
                                     </label>
                                     <input type="number" placeholder="1" class="input input-bordered w-3/12 bg-gray-100" />
                                 </div>
-                                <button type="" className='btn btn-success'>Place Order</button>
+                                <button type="" className='btn btn-success text-white'>Place Order</button>
                             </div>
                         </form>
                     </div>
