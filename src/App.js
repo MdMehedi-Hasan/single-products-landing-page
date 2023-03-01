@@ -3,11 +3,10 @@ import Center from './Components/Center';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Navbar from './Components/Navbar';
-import './App.css'
 
 const App = () => {
   return (
-    <div className='body'>
+    <div>
       <Navbar/>
       <Header/>
       <Center/>

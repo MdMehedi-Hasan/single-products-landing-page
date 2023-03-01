@@ -35,10 +35,22 @@ const Center = () => {
             area : event.target.area.value,
             qty : event.target.qty.value,
         }
-
-        console.log(data.name);
         if(!data.name){
-            console.log('empty');
+            const input = event.target.name
+            const error = document.getElementById('nameError')
+            if(error){
+                error.remove()
+                input.insertAdjacentHTML("afterend", "<span id='nameError' class='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
+            }
+            else{
+                input.insertAdjacentHTML("afterend", "<span id='nameError' class='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
+            }
+        }
+        else{
+            const error = document.getElementById('nameError')
+            if(error){
+                error.remove()
+            }
         }
 
         /* fetch("http://localhost:5000/order", {
@@ -335,7 +347,7 @@ const Center = () => {
                                     {/* <label className="label"></label> */}
                                     <label className="label">
                                         <span className="label-text-alt"></span>
-                                        <span className="label-text-alt">Example: Dhanmondi</span>
+                                        <span className="label-text-alt text-gray-400">ex: Dhanmondi</span>
                                     </label>
                                 </div>
                             </div>
