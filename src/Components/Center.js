@@ -52,6 +52,24 @@ const Center = () => {
                 error.remove()
             }
         }
+        // Name validation end
+        if(!data.phone){
+            const input = event.target.phone
+            const error = document.getElementById('phoneError')
+            if(error){
+                error.remove()
+                input.insertAdjacentHTML("afterend", "<span id='phoneError' class='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
+            }
+            else{
+                input.insertAdjacentHTML("afterend", "<span id='phoneError' class='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
+            }
+        }
+        else{
+            const error = document.getElementById('phoneError')
+            if(error){
+                error.remove()
+            }
+        }
 
         /* fetch("http://localhost:5000/order", {
             method: "POST",
