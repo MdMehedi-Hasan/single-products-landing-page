@@ -28,63 +28,189 @@ const Center = () => {
 
         const data = {
             name: event.target.name.value,
-            phone : event.target.phone.value,
-            email : event.target.email.value,
-            address : event.target.address.value,
-            city : event.target.city.value,
-            area : event.target.area.value,
-            qty : event.target.qty.value,
+            phone: event.target.phone.value,
+            email: event.target.email.value,
+            address: event.target.address.value,
+            city: event.target.city.value,
+            area: event.target.area.value,
+            qty: parseInt(event.target.qty.value),
         }
-        if(!data.name){
-            const input = event.target.name
+        if (data.name && data.phone && data.email && data.address && data.city && data.area && data.qty) {
             const error = document.getElementById('nameError')
-            if(error){
-                error.remove()
-                input.insertAdjacentHTML("afterend", "<span id='nameError' class='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
-            }
-            else{
-                input.insertAdjacentHTML("afterend", "<span id='nameError' class='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
-            }
-        }
-        else{
-            const error = document.getElementById('nameError')
-            if(error){
-                error.remove()
-            }
-        }
-        // Name validation end
-        if(!data.phone){
-            const input = event.target.phone
-            const error = document.getElementById('phoneError')
-            if(error){
-                error.remove()
-                input.insertAdjacentHTML("afterend", "<span id='phoneError' class='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
-            }
-            else{
-                input.insertAdjacentHTML("afterend", "<span id='phoneError' class='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
-            }
-        }
-        else{
-            const error = document.getElementById('phoneError')
-            if(error){
-                error.remove()
-            }
-        }
-
-        /* fetch("http://localhost:5000/order", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-        })
-            .then((response) => response.json())
-            .then((data) => {
-                console.log("Success:", data);
+                if(error){
+                    error.remove()
+                }
+            const error1 = document.getElementById('phoneError')
+                if(error1){
+                    error1.remove()
+                }
+            const error2 = document.getElementById('emailError')
+                if(error2){
+                    error2.remove()
+                }
+            const error3 = document.getElementById('addressError')
+                if(error3){
+                    error3.remove()
+                }
+            const error4 = document.getElementById('cityError')
+                if(error4){
+                    error4.remove()
+                }
+            const error5 = document.getElementById('areaError')
+                if(error5){
+                    error5.remove()
+                }
+            const error6 = document.getElementById('qtyError')
+                if(error6){
+                    error6.remove()
+                }
+            /* const error = document.getElementById('nameError')
+                if(error){
+                    error.remove()
+                } */
+            fetch("http://localhost:5000/order", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
             })
-            .catch((error) => {
-                console.error("Error:", error);
-            }); */
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log("Success:", data);
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+        }
+        else {
+            if (!data.name) {
+                const input = event.target.name
+                const error = document.getElementById('nameError')
+                if (error) {
+                    error.remove()
+                    input.insertAdjacentHTML("afterend", "<span id='nameError' class='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
+                }
+                else {
+                    input.insertAdjacentHTML("afterend", "<span id='nameError' class='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
+                }
+            }
+            else {
+                const error = document.getElementById('nameError')
+                if (error) {
+                    error.remove()
+                }
+            }
+            // Name validation end
+            if (!data.phone) {
+                const input = event.target.phone
+                const error = document.getElementById('phoneError')
+                if (error) {
+                    error.remove()
+                    input.insertAdjacentHTML("afterend", "<span id='phoneError' class='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
+                }
+                else {
+                    input.insertAdjacentHTML("afterend", "<span id='phoneError' class='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
+                }
+            }
+            else {
+                const error = document.getElementById('phoneError')
+                if (error) {
+                    error.remove()
+                }
+            }
+            // Phone validation end
+            if(!data.email){
+                const input = event.target.email
+                const error = document.getElementById('emailError')
+                if (error) {
+                    error.remove()
+                    input.insertAdjacentHTML("afterend", "<span id='emailError' class='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
+                }
+                else {
+                    input.insertAdjacentHTML("afterend", "<span id='emailError' class='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
+                }
+            }
+            else{
+                const error = document.getElementById('emailError')
+                if (error) {
+                    error.remove()
+                }
+            }
+            // Email validation end
+            if(!data.address){
+                const input = event.target.address
+                const error = document.getElementById('addressError')
+                if (error) {
+                    error.remove()
+                    input.insertAdjacentHTML("afterend", "<span id='addressError' class='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
+                }
+                else {
+                    input.insertAdjacentHTML("afterend", "<span id='addressError' class='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
+                }
+            }
+            else{
+                const error = document.getElementById('addressError')
+                if (error) {
+                    error.remove()
+                }
+            }
+            // Address validation end
+            if(!data.city){
+                const input = event.target.city
+                const error = document.getElementById('cityError')
+                if (error) {
+                    error.remove()
+                    input.insertAdjacentHTML("afterend", "<span id='cityError' class='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
+                }
+                else {
+                    input.insertAdjacentHTML("afterend", "<span id='cityError' class='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
+                }
+            }
+            else{
+                const error = document.getElementById('cityError')
+                if (error) {
+                    error.remove()
+                }
+            }
+            // City validation end
+            if(!data.area){
+                const input = event.target.area
+                const error = document.getElementById('areaError')
+                if (error) {
+                    error.remove()
+                    input.insertAdjacentHTML("afterend", "<span id='areaError' class='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
+                }
+                else {
+                    input.insertAdjacentHTML("afterend", "<span id='areaError' class='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
+                }
+            }
+            else{
+                const error = document.getElementById('areaError')
+                if (error) {
+                    error.remove()
+                }
+            }
+            // Area validation end
+            if(data.qty === 0 || !data.qty){
+                const input = event.target.qty
+                const error = document.getElementById('qtyError')
+                if (error) {
+                    error.remove()
+                    input.insertAdjacentHTML("afterend", "<span id='qtyError' class='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
+                }
+                else {
+                    input.insertAdjacentHTML("afterend", "<span id='qtyError' class='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
+                }
+            }
+            else{
+                const error = document.getElementById('qtyError')
+                if (error) {
+                    error.remove()
+                }
+            }
+            // Qty validation end
+        }
     }
     return (
         <div className='mt-[-40px] border'>
@@ -323,7 +449,7 @@ const Center = () => {
                         </div>
                     </div>
                     <div className='w-6/12'>
-                        <form onSubmit={(e)=>placeOrder(e)}>
+                        <form onSubmit={(e) => placeOrder(e)}>
                             <div className='flex gap-5'>
                                 <div className="form-control w-full ">
                                     <label className="label">
@@ -335,7 +461,7 @@ const Center = () => {
                                     <label className="label">
                                         <span className="label-text">Phone Number <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="number" placeholder="Type here" className="input w-full bg-gray-100 number" name="phone" onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()} min="0"/>
+                                    <input type="number" placeholder="Type here" className="input w-full bg-gray-100 number" name="phone" onKeyDown={(evt) => ["e", "E", "-"].includes(evt.key) && evt.preventDefault()} min="0" />
                                 </div>
                             </div>
                             <div className="form-control w-full">
@@ -374,7 +500,7 @@ const Center = () => {
                                     <label className="label">
                                         <span className="label-text">Select Qty <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="number" placeholder="1" className="input input-bordered w-3/12 bg-gray-100" name="qty" min="0"/>
+                                    <input type="number" placeholder="0" className="input input-bordered w-3/12 bg-gray-100" name="qty" min="0" />
                                 </div>
                                 {/* <input type="button" name="" className='border' value="button"/> */}
                                 <input type="submit" className='btn btn-success text-white' value="Place Order" />
