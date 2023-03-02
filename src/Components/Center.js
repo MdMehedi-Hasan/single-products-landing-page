@@ -1,10 +1,8 @@
-import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
 import image from '../Assets/straight-watch1.png'
 import connect from '../Assets/analytics.png'
 import confiqure from '../Assets/management.png'
 import trophy from '../Assets/trophy.png'
-import map from '../Assets/map.jpg'
 import Review from './Review';
 import watches from '../Assets/multiple-watches2.png'
 
@@ -21,9 +19,10 @@ import apps from '../Assets/copy.png'
 import like from '../Assets/like.png'
 import person from '../Assets/user.png'
 import watch from '../Assets/smart-watch.png'
+
 import swal from 'sweetalert';
-import './Center.css'
 import Faq from './Faq';
+import './Center.css'
 const Center = () => {
     const [amount, setAmount] = useState(0)
     const placeOrder = (event) => {
@@ -80,7 +79,7 @@ const Center = () => {
             })
                 .then((response) => response.json())
                 .then((data) => {
-                    console.log("Success:", data);
+                    // console.log("Success:", data);
                     if (data.acknowledged) {
                         swal({
                             title: "Order Placed Successfully!",
@@ -92,7 +91,15 @@ const Center = () => {
                     }
                 })
                 .catch((error) => {
-                    console.error("Error:", error);
+                    // console.error("Error:", error);
+                    if(error){
+                        swal({
+                            title: "Something went wrong!",
+                            text: "Please try again later or if this happen multiple times then please contact us at : +880132***785",
+                            icon: "error",
+                            button: "OK",
+                        });
+                    }
                 });
         }
         else {

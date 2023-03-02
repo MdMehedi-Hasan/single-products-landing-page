@@ -1,27 +1,21 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+require('dotenv').config()
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const port = 5000
 
 app.use(cors())
 app.use(express.json());
-// UserName : Mehedi
-// Password : DDob7H1skRtsIB0y
 
-const uri = "mongodb+srv://Mehedi:DDob7H1skRtsIB0y@cluster0.czg7kh6.mongodb.net/?retryWrites=true&w=majority";
+
+const uri = `mongodb+srv://${process.env.USER_NAME}:${process.env.PASSWORD}@cluster0.czg7kh6.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run() {
   try {
     client.connect();
-    // const database = client.db("arena21").collection("arena_single_sales_page");
 
-    /* const doc = {
-      title: "Record of a Shriveled Datum",
-      content: "No bytes, no problem. Just insert a document, in MongoDB",
-    }
-    const result = await database.insertOne(doc); */
     app.get('/', (req, res) => {
       res.send('Banckend connected with Nodejs & MongoDB')
     })
