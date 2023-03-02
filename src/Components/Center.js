@@ -21,6 +21,7 @@ import apps from '../Assets/copy.png'
 import like from '../Assets/like.png'
 import person from '../Assets/user.png'
 import watch from '../Assets/smart-watch.png'
+import swal from 'sweetalert';
 import './Center.css'
 const Center = () => {
     const placeOrder = (event) => {
@@ -37,33 +38,33 @@ const Center = () => {
         }
         if (data.name && data.phone && data.email && data.address && data.city && data.area && data.qty) {
             const error = document.getElementById('nameError')
-                if(error){
-                    error.remove()
-                }
+            if (error) {
+                error.remove()
+            }
             const error1 = document.getElementById('phoneError')
-                if(error1){
-                    error1.remove()
-                }
+            if (error1) {
+                error1.remove()
+            }
             const error2 = document.getElementById('emailError')
-                if(error2){
-                    error2.remove()
-                }
+            if (error2) {
+                error2.remove()
+            }
             const error3 = document.getElementById('addressError')
-                if(error3){
-                    error3.remove()
-                }
+            if (error3) {
+                error3.remove()
+            }
             const error4 = document.getElementById('cityError')
-                if(error4){
-                    error4.remove()
-                }
+            if (error4) {
+                error4.remove()
+            }
             const error5 = document.getElementById('areaError')
-                if(error5){
-                    error5.remove()
-                }
+            if (error5) {
+                error5.remove()
+            }
             const error6 = document.getElementById('qtyError')
-                if(error6){
-                    error6.remove()
-                }
+            if (error6) {
+                error6.remove()
+            }
             /* const error = document.getElementById('nameError')
                 if(error){
                     error.remove()
@@ -78,6 +79,15 @@ const Center = () => {
                 .then((response) => response.json())
                 .then((data) => {
                     console.log("Success:", data);
+                    if (data.acknowledged) {
+                        swal({
+                            title: "Order Placed Successfully!",
+                            text: "Your order has been placed. Our agent will call you regarding the order. If you have any query please contact us at : +880132***785",
+                            icon: "success",
+                            button: "OK",
+                        });
+                        event.target.reset()
+                    }
                 })
                 .catch((error) => {
                     console.error("Error:", error);
@@ -120,7 +130,7 @@ const Center = () => {
                 }
             }
             // Phone validation end
-            if(!data.email){
+            if (!data.email) {
                 const input = event.target.email
                 const error = document.getElementById('emailError')
                 if (error) {
@@ -131,14 +141,14 @@ const Center = () => {
                     input.insertAdjacentHTML("afterend", "<span id='emailError' class='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
                 }
             }
-            else{
+            else {
                 const error = document.getElementById('emailError')
                 if (error) {
                     error.remove()
                 }
             }
             // Email validation end
-            if(!data.address){
+            if (!data.address) {
                 const input = event.target.address
                 const error = document.getElementById('addressError')
                 if (error) {
@@ -149,14 +159,14 @@ const Center = () => {
                     input.insertAdjacentHTML("afterend", "<span id='addressError' class='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
                 }
             }
-            else{
+            else {
                 const error = document.getElementById('addressError')
                 if (error) {
                     error.remove()
                 }
             }
             // Address validation end
-            if(!data.city){
+            if (!data.city) {
                 const input = event.target.city
                 const error = document.getElementById('cityError')
                 if (error) {
@@ -167,14 +177,14 @@ const Center = () => {
                     input.insertAdjacentHTML("afterend", "<span id='cityError' class='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
                 }
             }
-            else{
+            else {
                 const error = document.getElementById('cityError')
                 if (error) {
                     error.remove()
                 }
             }
             // City validation end
-            if(!data.area){
+            if (!data.area) {
                 const input = event.target.area
                 const error = document.getElementById('areaError')
                 if (error) {
@@ -185,14 +195,14 @@ const Center = () => {
                     input.insertAdjacentHTML("afterend", "<span id='areaError' class='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
                 }
             }
-            else{
+            else {
                 const error = document.getElementById('areaError')
                 if (error) {
                     error.remove()
                 }
             }
             // Area validation end
-            if(data.qty === 0 || !data.qty){
+            if (data.qty === 0 || !data.qty) {
                 const input = event.target.qty
                 const error = document.getElementById('qtyError')
                 if (error) {
@@ -203,7 +213,7 @@ const Center = () => {
                     input.insertAdjacentHTML("afterend", "<span id='qtyError' class='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
                 }
             }
-            else{
+            else {
                 const error = document.getElementById('qtyError')
                 if (error) {
                     error.remove()
