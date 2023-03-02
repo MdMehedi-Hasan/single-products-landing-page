@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react';
-import React from 'react';
+import React, { useState } from 'react';
 import image from '../Assets/straight-watch1.png'
 import connect from '../Assets/analytics.png'
 import confiqure from '../Assets/management.png'
@@ -23,7 +23,9 @@ import person from '../Assets/user.png'
 import watch from '../Assets/smart-watch.png'
 import swal from 'sweetalert';
 import './Center.css'
+import Faq from './Faq';
 const Center = () => {
+    const [amount, setAmount] = useState(0)
     const placeOrder = (event) => {
         event.preventDefault()
 
@@ -99,10 +101,10 @@ const Center = () => {
                 const error = document.getElementById('nameError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='nameError' class='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='nameError' className='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='nameError' class='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='nameError' className='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
                 }
             }
             else {
@@ -117,10 +119,10 @@ const Center = () => {
                 const error = document.getElementById('phoneError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='phoneError' class='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='phoneError' className='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='phoneError' class='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='phoneError' className='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
                 }
             }
             else {
@@ -135,10 +137,10 @@ const Center = () => {
                 const error = document.getElementById('emailError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='emailError' class='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='emailError' className='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='emailError' class='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='emailError' className='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
                 }
             }
             else {
@@ -153,10 +155,10 @@ const Center = () => {
                 const error = document.getElementById('addressError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='addressError' class='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='addressError' className='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='addressError' class='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='addressError' className='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
                 }
             }
             else {
@@ -171,10 +173,10 @@ const Center = () => {
                 const error = document.getElementById('cityError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='cityError' class='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='cityError' className='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='cityError' class='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='cityError' className='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
                 }
             }
             else {
@@ -189,10 +191,10 @@ const Center = () => {
                 const error = document.getElementById('areaError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='areaError' class='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='areaError' className='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='areaError' class='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='areaError' className='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
                 }
             }
             else {
@@ -207,10 +209,10 @@ const Center = () => {
                 const error = document.getElementById('qtyError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='qtyError' class='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='qtyError' className='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='qtyError' class='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='qtyError' className='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
                 }
             }
             else {
@@ -436,7 +438,10 @@ const Center = () => {
             <section id='reviews'>
                 <Review />
             </section>
-            <section id="order" className=' flex justify-center py-40'>
+            <section>
+                <Faq />
+            </section>
+            <section id="order" className=' flex justify-center py-40 bg-gray-100'>
                 <div className='container flex justify-center gap-40'>
                     {/* <div className="card image-full">
                         <figure><img src={map} alt="map" /></figure>
@@ -465,39 +470,39 @@ const Center = () => {
                                     <label className="label">
                                         <span className="label-text">Full Name <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="Type here" className="input w-full bg-gray-100" name="name" />
+                                    <input type="text" placeholder="John Doe" className="input w-full bg-white" name="name" />
                                 </div>
                                 <div className="form-control w-full ">
                                     <label className="label">
                                         <span className="label-text">Phone Number <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="number" placeholder="Type here" className="input w-full bg-gray-100 number" name="phone" onKeyDown={(evt) => ["e", "E", "-"].includes(evt.key) && evt.preventDefault()} min="0" />
+                                    <input type="number" placeholder="017********" className="input w-full bg-white" name="phone" onKeyDown={(evt) => ["e", "E", "-"].includes(evt.key) && evt.preventDefault()} min="0" />
                                 </div>
                             </div>
                             <div className="form-control w-full">
                                 <label className="label">
                                     <span className="label-text">Email Address <span className='text-red-600'>&#42;</span></span>
                                 </label>
-                                <input type="text" placeholder="Type here" className="input w-full bg-gray-100" name="email" />
+                                <input type="text" placeholder="example@gmail.com" className="input w-full bg-white" name="email" />
                             </div>
                             <div className="form-control w-full">
                                 <label className="label">
                                     <span className="label-text">Delivery Address <span className='text-red-600'>&#42;</span></span>
                                 </label>
-                                <input type="text" placeholder="Type here" className="input w-full bg-gray-100" name="address" />
+                                <input type="text" placeholder="House-02, Road-12, Bonosree, Dhaka-1230" className="input w-full bg-white" name="address" />
                             </div>
                             <div className='flex gap-5'>
                                 <div className="form-control w-full">
                                     <label className="label">
                                         <span className="label-text">City <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="Type here" className="input w-full bg-gray-100" name="city" />
+                                    <input type="text" placeholder="Dhaka" className="input w-full bg-white" name="city" />
                                 </div>
                                 <div className="form-control w-full">
                                     <label className="label">
                                         <span className="label-text">Area <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="Type here" className="input w-full bg-gray-100" name="area" />
+                                    <input type="text" placeholder="Bonosree" className="input w-full bg-white" name="area" />
                                     {/* <label className="label"></label> */}
                                     <label className="label">
                                         <span className="label-text-alt"></span>
@@ -505,12 +510,15 @@ const Center = () => {
                                     </label>
                                 </div>
                             </div>
-                            <div id='test' className='flex items-end justify-between'>
+                            <div className='flex items-end justify-between'>
                                 <div className="form-control w-full max-w-xs">
                                     <label className="label">
                                         <span className="label-text">Select Qty <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="number" placeholder="0" className="input input-bordered w-3/12 bg-gray-100" name="qty" min="0" />
+                                    <div className='flex justify-between items-center'>
+                                        <input type="number" placeholder="0" className="input input-bordered w-3/12 bg-white" name="qty" min="0" onChange={(e) => setAmount(e.target.value * 500)} />
+                                        <p className='font-semibold'>Amount: <span>{amount}</span></p>
+                                    </div>
                                 </div>
                                 {/* <input type="button" name="" className='border' value="button"/> */}
                                 <input type="submit" className='btn btn-success text-white' value="Place Order" />
