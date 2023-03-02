@@ -29,11 +29,12 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li><a href='#reviews'>Reviews</a></li>
+                            <li><a href='#faq'>FAQ</a></li>
                             <li><a href='#order'>Contact</a></li>
                             <li><a href='#order'>Order Now</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl p-0"><img src={watch} alt=""/></a>
+                    <a className="btn btn-ghost normal-case text-xl p-0" href='#'><img src={watch} alt=""/></a>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -45,8 +46,9 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li><a href='#reviews'>Reviews</a></li>
+                        <li><a href='#faq'>FAQ</a></li>
                         <li><a href='#order'>Contact</a></li>
-                        <li><a href='#order'>Order Now</a></li>
+                        <li className='border border-gray-400 rounded-xl bg-white text-black font-normal'><a href='#order'>Order Now</a></li>
                     </ul>
                 </div>
             </div>

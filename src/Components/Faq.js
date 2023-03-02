@@ -5,8 +5,8 @@ import blob from '../Assets/faq-blob1.svg'
 
 const Faq = () => {
     return (
-        <div className='flex justify-center'>
-            <div>
+        <div id='faq' className='flex justify-center'>
+            <div className='pt-20'>
                 <div className=''>
                     <h1 className='text-6xl text-center font-semibold'>FAQ</h1>
                     <p className='mx-auto mt-3 text-2xl font-semibold text-gray-400 max-w-2xl text-center'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>

@@ -12,7 +12,7 @@ const Header = () => {
                     <div className='flex-1'></div>
                     <h1 className='text-8xl title flex-1'>Helio G92 <br/> Smart Watch</h1>
                     <div className='flex-1'>
-                    <a href="#order"><button type="" className='btn bg-white text-black border-white hover:bg-white hover:text-black hover:border-white mt-10'>Order Now</button></a>
+                    <a href="#order"><button type="" className='btn bg-white text-black border-gray-400 hover:bg-white hover:text-black hover:border-white mt-10'>Order Now</button></a>
                     </div>
                 </div>
                 <div className='relative'>

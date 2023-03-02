@@ -441,7 +441,7 @@ const Center = () => {
             <section>
                 <Faq />
             </section>
-            <section id="order" className=' flex justify-center py-40 bg-gray-100'>
+            <section id="order" className=' flex justify-center py-40 bg-base-200'>
                 <div className='container flex justify-center gap-40'>
                     {/* <div className="card image-full">
                         <figure><img src={map} alt="map" /></figure>
@@ -470,39 +470,39 @@ const Center = () => {
                                     <label className="label">
                                         <span className="label-text">Full Name <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="John Doe" className="input w-full bg-white" name="name" />
+                                    <input type="text" placeholder="John Doe" className="input input-bordered w-full bg-white" name="name" />
                                 </div>
                                 <div className="form-control w-full ">
                                     <label className="label">
                                         <span className="label-text">Phone Number <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="number" placeholder="017********" className="input w-full bg-white" name="phone" onKeyDown={(evt) => ["e", "E", "-"].includes(evt.key) && evt.preventDefault()} min="0" />
+                                    <input type="number" placeholder="017********" className="input input-bordered w-full bg-white" name="phone" onKeyDown={(evt) => ["e", "E", "-"].includes(evt.key) && evt.preventDefault()} min="0" />
                                 </div>
                             </div>
                             <div className="form-control w-full">
                                 <label className="label">
                                     <span className="label-text">Email Address <span className='text-red-600'>&#42;</span></span>
                                 </label>
-                                <input type="text" placeholder="example@gmail.com" className="input w-full bg-white" name="email" />
+                                <input type="text" placeholder="example@gmail.com" className="input input-bordered w-full bg-white" name="email" />
                             </div>
                             <div className="form-control w-full">
                                 <label className="label">
                                     <span className="label-text">Delivery Address <span className='text-red-600'>&#42;</span></span>
                                 </label>
-                                <input type="text" placeholder="House-02, Road-12, Bonosree, Dhaka-1230" className="input w-full bg-white" name="address" />
+                                <input type="text" placeholder="House-02, Road-12, Bonosree, Dhaka-1230" className="input input-bordered w-full bg-white" name="address" />
                             </div>
                             <div className='flex gap-5'>
                                 <div className="form-control w-full">
                                     <label className="label">
                                         <span className="label-text">City <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="Dhaka" className="input w-full bg-white" name="city" />
+                                    <input type="text" placeholder="Dhaka" className="input input-bordered w-full bg-white" name="city" />
                                 </div>
                                 <div className="form-control w-full">
                                     <label className="label">
                                         <span className="label-text">Area <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="Bonosree" className="input w-full bg-white" name="area" />
+                                    <input type="text" placeholder="Bonosree" className="input input-bordered w-full bg-white" name="area" />
                                     {/* <label className="label"></label> */}
                                     <label className="label">
                                         <span className="label-text-alt"></span>

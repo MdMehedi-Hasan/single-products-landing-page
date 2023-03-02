@@ -12,7 +12,7 @@ import { Icon } from '@iconify/react';
 
 const Review = () => {
     return (
-        <div className='pt-20 bg-base-200 mb-40'>
+        <div className='pt-20 bg-base-200 mb-20'>
             <Swiper
                 slidesPerView={1}
                 // spaceBetween={30}
