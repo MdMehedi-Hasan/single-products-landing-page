@@ -6,9 +6,9 @@ import twitter from '../Assets/twitter.png'
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-[#00d374] text-white">
+        <footer className="footer p-10 bg-[#00d374] text-white test">
             <div>
-                <img src={watch} alt=""/>
+                <img src={watch} alt="" />
                 <p className='text-xl'>Providing quality service since 1992</p>
             </div>
             <div>
@@ -25,9 +25,9 @@ const Footer = () => {
             <div>
                 <span className="text-3xl font-bold">Follow Us</span>
                 <div className='flex gap-5'>
-                <a className="link link-hover"><img src={facebook} alt=""/></a>
-                <a className="link link-hover"><img src={instagram} alt=""/></a>
-                <a className="link link-hover"><img src={twitter} alt=""/></a>
+                    <a className="link link-hover"><img src={facebook} alt="" /></a>
+                    <a className="link link-hover"><img src={instagram} alt="" /></a>
+                    <a className="link link-hover"><img src={twitter} alt="" /></a>
                 </div>
             </div>
         </footer>

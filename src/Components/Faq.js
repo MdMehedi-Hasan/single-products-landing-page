@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
-import image from '../Assets/faq.png'
+// import image from '../Assets/faq.png'
+import image from '../Assets/faq-blob1.png'
 import blob from '../Assets/faq-blob1.svg'
 
 const Faq = () => {
@@ -72,7 +73,6 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
