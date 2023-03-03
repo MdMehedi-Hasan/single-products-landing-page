@@ -108,10 +108,10 @@ const Center = () => {
                 const error = document.getElementById('nameError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='nameError' className='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='nameError' class='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='nameError' className='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='nameError' class='text-red-500 ml-2 font-semibold text-sm'>Full Name is Required!<span/>");
                 }
             }
             else {
@@ -126,10 +126,10 @@ const Center = () => {
                 const error = document.getElementById('phoneError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='phoneError' className='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='phoneError' class='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='phoneError' className='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='phoneError' class='text-red-500 ml-2 font-semibold text-sm'>Phone Number is Required!<span/>");
                 }
             }
             else {
@@ -144,10 +144,10 @@ const Center = () => {
                 const error = document.getElementById('emailError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='emailError' className='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='emailError' class='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='emailError' className='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='emailError' class='text-red-500 ml-2 font-semibold text-sm'>Email is Required!<span/>");
                 }
             }
             else {
@@ -162,10 +162,10 @@ const Center = () => {
                 const error = document.getElementById('addressError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='addressError' className='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='addressError' class='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='addressError' className='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='addressError' class='text-red-500 ml-2 font-semibold text-sm'>Address is Required!<span/>");
                 }
             }
             else {
@@ -180,10 +180,10 @@ const Center = () => {
                 const error = document.getElementById('cityError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='cityError' className='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='cityError' class='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='cityError' className='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='cityError' class='text-red-500 ml-2 font-semibold text-sm'>City is Required!<span/>");
                 }
             }
             else {
@@ -198,10 +198,10 @@ const Center = () => {
                 const error = document.getElementById('areaError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='areaError' className='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='areaError' class='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='areaError' className='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='areaError' class='text-red-500 ml-2 font-semibold text-sm'>Area is Required!<span/>");
                 }
             }
             else {
@@ -216,10 +216,10 @@ const Center = () => {
                 const error = document.getElementById('qtyError')
                 if (error) {
                     error.remove()
-                    input.insertAdjacentHTML("afterend", "<span id='qtyError' className='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='qtyError' class='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
                 }
                 else {
-                    input.insertAdjacentHTML("afterend", "<span id='qtyError' className='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
+                    input.insertAdjacentHTML("afterend", "<span id='qtyError' class='text-red-500 ml-1 font-semibold text-sm'>Minimum order quantity is 1<span/>");
                 }
             }
             else {
