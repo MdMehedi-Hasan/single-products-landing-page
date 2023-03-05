@@ -322,7 +322,7 @@ const Center = () => {
                 </div>
             </section>
             <section className='flex justify-center bg-base-200 py-40'>
-                <div className='grid grid-cols-3 items-center container'>
+                <div className='grid lg:grid-cols-3 items-center container'>
                     <div className='flex flex-col gap-10'>
                         <div className='flex gap-3 justify-start border-r-2 border-b-2 p-5 border-gray-200' data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <img src={key} alt="" className='h-12' />
@@ -346,7 +346,7 @@ const Center = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex justify-center items-center' data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-sine"><img src={image} alt="" /></div>
+                    <div className='flex justify-center items-center order-3 lg:order-none mt-32 lg:mt-0' data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-sine"><img src={image} alt="" /></div>
                     <div className='flex flex-col gap-10'>
                         <div className='flex gap-3 justify-start border-l-2 border-b-2 p-5 border-gray-200' data-aos="zoom-in" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <img src={like} alt="" className='h-12' />
@@ -376,15 +376,15 @@ const Center = () => {
                 <div className='container'>
                     <h1 className='text-center text-6xl font-semibold' data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-sine">TECH SPECS</h1>
                     <p className='text-center text-2xl text-gray-500 w-6/12 mx-auto py-4' data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200" data-aos-easing="ease-in-sine">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <div className='grid grid-cols-3 pt-20 pb-24 gap-x-20 gap-y-10'>
-                        <div className='border-b mx-16' data-aos="fade-right" data-aos-delay="1400" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                    <div className='grid sm:grid-cols-2 lg:grid-cols-3 pt-20 pb-24 lg:gap-x-20 gap-y-10'>
+                        <div className='border-b mx-5 sm:mx-16' data-aos="fade-right" data-aos-delay="1400" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <h1 className='text-2xl font-semibold'>Compatibility</h1>
                             <p className='font-sans text-gray-500'>iPhone iOS 7 & up
                                 Android 4.3 & uptexts
                                 Bluetooth 4.0
                                 Notification for calls / texts</p>
                         </div>
-                        <div className='border-b mx-16' data-aos="fade-up-right" data-aos-delay="1500" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div className='border-b mx-5 sm:mx-16' data-aos="fade-up-right" data-aos-delay="1500" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <h1 className='text-2xl font-semibold'>App</h1>
                             <p className='font-sans text-gray-500'>Set daily goals
                                 Analyze history
@@ -393,7 +393,7 @@ const Center = () => {
                                 Connect to Google fit
                                 Watch firmware upgrade</p>
                         </div>
-                        <div className='border-b mx-16' data-aos="fade-up-right" data-aos-delay="1600" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div className='border-b mx-5 sm:mx-16' data-aos="fade-up-right" data-aos-delay="1600" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <h1 className='text-2xl font-semibold'>Vibration silent alarms</h1>
                             <p className='font-sans text-gray-500'>Phone notifications
                                 Daily goal reached
@@ -401,7 +401,7 @@ const Center = () => {
                                 Location assistance
                                 Accessiblity features</p>
                         </div>
-                        <div className='border-b mx-16' data-aos="fade-up-right" data-aos-delay="1700" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div className='border-b mx-5 sm:mx-16' data-aos="fade-up-right" data-aos-delay="1700" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <h1 className='text-2xl font-semibold'>Watch</h1>
                             <p className='font-sans text-gray-500'>12.6mm thickness
                                 3.16L stainless steel case
@@ -409,31 +409,31 @@ const Center = () => {
                                 5 ATM water resistant
                                 Sapphire glass crystal</p>
                         </div>
-                        <div className='border-b mx-16' data-aos="fade-up-right" data-aos-delay="1800" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div className='border-b mx-5 sm:mx-16' data-aos="fade-up-right" data-aos-delay="1800" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <h1 className='text-2xl font-semibold'>Straps</h1>
                             <p className='font-sans text-gray-500'>Italian leather with natural lining
                                 Comfort sport fabric
                                 Quick-release pins</p>
                         </div>
-                        <div className='border-b mx-16' data-aos="fade-up-right" data-aos-delay="1900" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div className='border-b mx-5 sm:mx-16' data-aos="fade-up-right" data-aos-delay="1900" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <h1 className='text-2xl font-semibold'>Activity tracking</h1>
                             <p className='font-sans text-gray-500'>Step counting
                                 Distance
                                 Calories burned
                                 Swimming (strokes)</p>
                         </div>
-                        <div className='border-b mx-16' data-aos="fade-up-right" data-aos-delay="2000" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div className='border-b mx-5 sm:mx-16' data-aos="fade-up-right" data-aos-delay="2000" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <h1 className='text-2xl font-semibold'>Timekeeping</h1>
                             <p className='font-sans text-gray-500'>Swiss ETA movement
                                 Accurate, reliable</p>
                         </div>
-                        <div className='border-b mx-16' data-aos="fade-up-right" data-aos-delay="2100" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div className='border-b mx-5 sm:mx-16' data-aos="fade-up-right" data-aos-delay="2100" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <h1 className='text-2xl font-semibold'>Battery power</h1>
                             <p className='font-sans text-gray-500'>Standard CR2025 6+ months
                                 Standard 364 for timekeeping 5+ years
                                 Solar Power available as aupgrade</p>
                         </div>
-                        <div className='border-b mx-16' data-aos="fade-up-right" data-aos-delay="2200" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div className='border-b mx-5 sm:mx-16' data-aos="fade-up-right" data-aos-delay="2200" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <h1 className='text-2xl font-semibold'>Sensors</h1>
                             <p className='font-sans text-gray-500'>MEMS 3-axis accelerometer
                                 Highly accurate
