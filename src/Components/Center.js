@@ -262,7 +262,7 @@ const Center = () => {
                 <div className='container'>
                     <h1 className='text-center text-6xl font-semibold' data-aos="fade-up" data-aos-delay="1000" data-aos-duration="10000" data-aos-easing="ease-in-out">The Benefits</h1>
                     <p className='text-center text-2xl text-gray-500 w-6/12 mx-auto py-4' data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <div className='grid grid-cols-3 pt-20 pb-24 gap-10'>
+                    <div className='grid sm:grid-cols-2 lg:grid-cols-3 pt-20 pb-24 gap-10'>
                         <div className='flex justify-start gap-3' data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                             <img src={gps} alt="" className='w-12 h-12' />
                             <div>
@@ -309,7 +309,7 @@ const Center = () => {
                 </div>
             </section>
             <section id='description' className='flex justify-center'>
-                <div className='container grid grid-cols-2 items-center py-40'>
+                <div className='container grid md:grid-cols-2 items-center justify-items-center md:justify-items-start gap-y-32 md:gap-y-0 py-40'>
                     <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                         <img src={watches} alt="watches" />
                     </div>
