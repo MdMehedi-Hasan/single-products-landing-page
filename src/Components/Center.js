@@ -448,8 +448,8 @@ const Center = () => {
             <section>
                 <Faq />
             </section>
-            <section id="order" className=' flex justify-center py-40 bg-base-200'>
-                <div className='container flex justify-center gap-40'>
+            <section id="order" className='flex justify-center py-40 bg-base-200'>
+                <div className='lg:container flex flex-col md:flex-row justify-center gap-40'>
                     {/* <div className="card image-full">
                         <figure><img src={map} alt="map" /></figure>
                         <div className="flex items-center justify-center">
@@ -470,14 +470,14 @@ const Center = () => {
                             <p>example@plutoproducts.com</p>
                         </div>
                     </div>
-                    <div className='w-6/12'>
+                    <div className='lg:w-6/12'>
                         <form onSubmit={(e) => placeOrder(e)}>
-                            <div className='flex gap-5'>
-                                <div className="form-control w-full ">
+                            <div className='sm:flex sm:gap-5'>
+                                <div className="form-control w-full">
                                     <label className="label">
                                         <span className="label-text">Full Name <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="John Doe" className="input input-bordered w-full bg-white" name="name" />
+                                    <input type="text" placeholder="John Doe" className="input input-bordered sm:w-full bg-white" name="name" />
                                 </div>
                                 <div className="form-control w-full ">
                                     <label className="label">
@@ -498,7 +498,7 @@ const Center = () => {
                                 </label>
                                 <input type="text" placeholder="House-02, Road-12, Bonosree, Dhaka-1230" className="input input-bordered w-full bg-white" name="address" />
                             </div>
-                            <div className='flex gap-5'>
+                            <div className='sm:flex sm:gap-5'>
                                 <div className="form-control w-full">
                                     <label className="label">
                                         <span className="label-text">City <span className='text-red-600'>&#42;</span></span>
