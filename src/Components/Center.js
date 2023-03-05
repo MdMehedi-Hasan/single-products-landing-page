@@ -234,24 +234,24 @@ const Center = () => {
     return (
         <div className='mt-[-40px] border'>
             <section className='flex justify-center pb-40 bg-base-200'>
-                <div className='container flex justify-center gap-5'>
+                <div className='container flex flex-col md:flex-row gap-y-10 md:gap-y-0 justify-center gap-5'>
                     <div className="card w-auto bg-white shadow-xl text-center py-5" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="700" data-aos-easing="ease-in-out">
-                        <figure><img src={connect} alt="Connect" className='w-24' /></figure>
-                        <div className="card-body">
+                        <figure><img src={connect} alt="Connect" className='w-12 md:w-16 lg:w-24' /></figure>
+                        <div className="card-body md:p-2 lg:p-5 xl:p-8">
                             <h2 className="text-2xl font-semibold">Connect Device</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
                         </div>
                     </div>
                     <div className="card w-auto bg-white shadow-xl text-center py-5" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="700" data-aos-easing="ease-in-out">
-                        <figure><img src={confiqure} alt="confiqure" className='w-24' /></figure>
-                        <div className="card-body">
+                        <figure><img src={confiqure} alt="confiqure" className='w-12 md:w-16 lg:w-24' /></figure>
+                        <div className="card-body md:p-2 lg:p-5 xl:p-8">
                             <h2 className="text-2xl font-semibold">Configure it</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
                         </div>
                     </div>
                     <div className="card w-auto bg-white shadow-xl text-center py-5" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="700" data-aos-easing="ease-in-out">
-                        <figure><img src={trophy} alt="trophy" className='w-24' /></figure>
-                        <div className="card-body">
+                        <figure><img src={trophy} alt="trophy" className='w-12 md:w-16 lg:w-24' /></figure>
+                        <div className="card-body md:p-2 lg:p-5 xl:p-8">
                             <h2 className="text-2xl font-semibold">Yay! Done</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
                         </div>
