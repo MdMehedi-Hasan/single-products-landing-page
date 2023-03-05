@@ -261,7 +261,7 @@ const Center = () => {
             <section className='flex justify-center bg-base-200 py-20'>
                 <div className='container'>
                     <h1 className='text-center text-6xl font-semibold' data-aos="fade-up" data-aos-delay="1000" data-aos-duration="10000" data-aos-easing="ease-in-out">The Benefits</h1>
-                    <p className='text-center text-2xl text-gray-500 w-6/12 mx-auto py-4' data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p className='text-center text-2xl text-gray-500 lg:w-6/12 mx-auto py-4' data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     <div className='grid sm:grid-cols-2 lg:grid-cols-3 pt-20 pb-24 gap-10'>
                         <div className='flex justify-start gap-3' data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                             <img src={gps} alt="" className='w-12 h-12' />
@@ -313,7 +313,7 @@ const Center = () => {
                     <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                         <img src={watches} alt="watches" />
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                         <h1 className='text-4xl font-semibold'>Product Description</h1>
                         <p className='py-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>

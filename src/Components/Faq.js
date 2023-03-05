@@ -63,7 +63,7 @@ const Faq = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-sine" className='md:w-6/12'>
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-sine" className='md:w-6/12'>
                         <figure className='flex justify-end relative'>
                             <img src={image} alt="Trulli" className='relative z-10'/>
                         </figure>
