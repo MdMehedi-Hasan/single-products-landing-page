@@ -15,8 +15,8 @@ const Review = () => {
         <div className='pt-20 bg-base-200 mb-20'>
             <Swiper
                 slidesPerView={1}
-                // spaceBetween={30}
-                freeMode={true}
+                spaceBetween={30}
+                // freeMode={true}
                 pagination={{
                     clickable: true,
                 }}
@@ -24,7 +24,7 @@ const Review = () => {
                 className="mySwiper text-center"
             >
                 <SwiperSlide className='pb-10 pt-2'>
-                    <div className='w-[620px] mx-auto'>
+                    <div className='max-w-[620px] mx-auto'>
                         <div className="avatar">
                             <div className="w-24 rounded-full ring ring-success">
                                 <img src={review1} alt='client' />
@@ -35,7 +35,7 @@ const Review = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
-                    <div className='w-[620px] mx-auto'>
+                    <div className='max-w-[620px] mx-auto'>
                         <div className="avatar">
                             <div className="w-24 rounded-full ring ring-success">
                                 <img src={review2} alt='client' />
@@ -46,7 +46,7 @@ const Review = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
-                    <div className='w-[620px] mx-auto'>
+                    <div className='max-w-[620px] mx-auto'>
                         <div className="avatar">
                             <div className="w-24 rounded-full ring ring-success">
                                 <img src={review3} alt='client' />
@@ -57,7 +57,7 @@ const Review = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
-                    <div className='w-[620px] mx-auto'>
+                    <div className='max-w-[620px] mx-auto'>
                         <div className="avatar">
                             <div className="w-24 rounded-full ring ring-success">
                                 <img src={review4} alt='client' />
@@ -68,7 +68,7 @@ const Review = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
-                    <div className='w-[620px] mx-auto'>
+                    <div className='max-w-[620px] mx-auto'>
                         <div className="avatar">
                             <div className="w-24 rounded-full ring ring-success">
                                 <img src={review2} alt='client' />
@@ -79,7 +79,7 @@ const Review = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='pb-10 pt-2'>
-                    <div className='w-[620px] mx-auto'>
+                    <div className='max-w-[620px] mx-auto'>
                         <div className="avatar">
                             <div className="w-24 rounded-full ring ring-success">
                                 <img src={review3} alt='client' />
