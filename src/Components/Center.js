@@ -92,7 +92,7 @@ const Center = () => {
                 })
                 .catch((error) => {
                     // console.error("Error:", error);
-                    if(error){
+                    if (error) {
                         swal({
                             title: "Something went wrong!",
                             text: "Please try again later or if this happen multiple times then please contact us at : +880132***785",
@@ -518,13 +518,15 @@ const Center = () => {
                                 </div>
                             </div>
                             <div className='flex items-end justify-between'>
-                                <div className="form-control w-full max-w-xs">
+                                <div className="form-control w-full">
                                     <label className="label">
                                         <span className="label-text">Select Qty <span className='text-red-600'>&#42;</span></span>
                                     </label>
                                     <div className='flex justify-between items-center'>
+                                        <div className='flex flex-col w-full'>
                                         <input type="number" placeholder="0" className="input input-bordered w-3/12 bg-white" name="qty" min="0" onChange={(e) => setAmount(e.target.value * 500)} />
-                                        <p className='font-semibold'>Amount: <span>{amount}</span></p>
+                                        </div>
+                                        <p className='font-semibold w-full'>Amount: {amount}</p>
                                     </div>
                                 </div>
                                 {/* <input type="button" name="" className='border' value="button"/> */}
