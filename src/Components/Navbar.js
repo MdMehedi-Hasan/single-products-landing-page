@@ -15,7 +15,7 @@ const Navbar = () => {
       })
     return (
         <div className={`${!navbar? 'bg-transparent' : 'bg-[#00d374]'} flex justify-center text-xl font-semibold fixed top-0 z-50 w-full`}>{/* bg-[#a7f0ba] */}
-            <div className="navbar text-white container px-0">
+            <div className="container navbar justify-between text-white px-0">
                 <div className="navbar-start w-full justify-between flex-row-reverse">{/*  */}
                     <div className="dropdown dropdown-end">
                         <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </div>
                     <a className="btn btn-ghost normal-case text-xl p-0" href='#'><img src={watch} alt=""/></a>
                 </div>
-                <div className="navbar-end hidden lg:flex">
+                <div className="navbar-end lg:w-auto hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><a href='#'>Home</a></li>
                         <li tabIndex="0">
