@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
             <div>
                 <span className="text-3xl font-bold">Support</span>
-                <a className="link link-hover">contact@allbrandshop.com</a>
+                <a className="link link-hover">contact@watchworld.com</a>
                 <a className="link link-hover">+9125484484</a>
             </div>
             <div>

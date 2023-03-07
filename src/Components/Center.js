@@ -474,7 +474,7 @@ const Center = () => {
                         </div>
                         <div>
                             <h1 className='text-2xl font-semibold'>Email</h1>
-                            <p>contact@allbrandshop.com</p>
+                            <p>contact@watchworld.com</p>
                         </div>
                     </div>
                     <div className='lg:w-6/12'>
