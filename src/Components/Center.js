@@ -232,56 +232,56 @@ const Center = () => {
         }
     }
     return (
-        <div className='mt-[-40px] border'>
+        <div className='mt-[-40px]'>
             <section className='flex justify-center pb-40 bg-base-200'>
-                <div className='container flex flex-col md:flex-row gap-y-10 md:gap-y-0 justify-center gap-5'>
+                <div className='container flex flex-col md:grid md:grid-cols-3 gap-y-10 md:gap-y-0 justify-center gap-5'>
                     <div className="card w-auto bg-white shadow-xl text-center py-5" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="700" data-aos-easing="ease-in-out">
                         <figure><img src={connect} alt="Connect" className='w-12 md:w-16 lg:w-24' /></figure>
                         <div className="card-body md:p-2 lg:p-5 xl:p-8">
                             <h2 className="text-2xl font-semibold">Connect Device</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
+                            <p>Connect the device with our app to track all activities and get notified of messages, calls etc.</p>
                         </div>
                     </div>
                     <div className="card w-auto bg-white shadow-xl text-center py-5" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="700" data-aos-easing="ease-in-out">
                         <figure><img src={confiqure} alt="confiqure" className='w-12 md:w-16 lg:w-24' /></figure>
                         <div className="card-body md:p-2 lg:p-5 xl:p-8">
                             <h2 className="text-2xl font-semibold">Configure it</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
+                            <p>Install our app from appstore and configure it with your watch model. Once it is configured you will get all desired notifications.</p>
                         </div>
                     </div>
                     <div className="card w-auto bg-white shadow-xl text-center py-5" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="700" data-aos-easing="ease-in-out">
                         <figure><img src={trophy} alt="trophy" className='w-12 md:w-16 lg:w-24' /></figure>
                         <div className="card-body md:p-2 lg:p-5 xl:p-8">
                             <h2 className="text-2xl font-semibold">Yay! Done</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
+                            <p>After configuring the watch you are all set to track your daily activities. You can now get call, message notifications.</p>
                         </div>
                     </div>
                 </div>
             </section>
             <section className='flex justify-center bg-base-200 py-20'>
                 <div className='container'>
-                    <h1 className='text-center text-6xl font-semibold' data-aos="fade-up" data-aos-delay="1000" data-aos-duration="10000" data-aos-easing="ease-in-out">The Benefits</h1>
-                    <p className='text-center text-2xl text-gray-500 lg:w-6/12 mx-auto py-4' data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <h1 className='text-center text-6xl font-semibold' data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">The Benefits</h1>
+                    <p className='text-center text-2xl text-gray-500 lg:w-6/12 mx-auto py-4' data-aos="zoom-in-up" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out">Smart watch make your daily life easy and productive. With this watch you can do simply anything & everything.</p>
                     <div className='grid sm:grid-cols-2 lg:grid-cols-3 pt-20 pb-24 gap-10'>
                         <div className='flex justify-start gap-3' data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                             <img src={gps} alt="" className='w-12 h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-semibold'>GPS Tracking</h1>
-                                <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p className='font-sans'>In build GPS Tracking with 99.99% acquracy.</p>
                             </div>
                         </div>
                         <div className='flex justify-start gap-3' data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                             <img src={security} alt="" className='w-12 h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-semibold'>Security first</h1>
-                                <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p className='font-sans'>In G92 we have ensured client security & privacy so that no one can steal your data.</p>
                             </div>
                         </div>
                         <div className='flex justify-start gap-3' data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                             <img src={idea} alt="" className='w-12 h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-semibold'>Innovative idea</h1>
-                                <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p className='font-sans'>With our innovative team we have approached some new functionaliites.</p>
                             </div>
                         </div>
                         <div className='flex justify-start gap-3' data-aos="zoom-in-up" data-aos-delay="1100" data-aos-duration="1000" data-aos-easing="ease-in-sine">
