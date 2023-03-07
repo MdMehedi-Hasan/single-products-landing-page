@@ -459,7 +459,7 @@ const Center = () => {
                     <div className='flex flex-col gap-10 w-96'>
                         <div>
                             <h1 className='text-2xl font-semibold'>Address</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur de elit, sed do tempor incididunt ut labore eta rehenderit in voluptate velit.</p>
+                            <p>27 heisenberg, new street california.</p>
                         </div>
                         <div>
                             <h1 className='text-2xl font-semibold'>Phone</h1>
@@ -467,7 +467,7 @@ const Center = () => {
                         </div>
                         <div>
                             <h1 className='text-2xl font-semibold'>Email</h1>
-                            <p>example@plutoproducts.com</p>
+                            <p>contact@allbrandshop.com</p>
                         </div>
                     </div>
                     <div className='lg:w-6/12'>
@@ -483,7 +483,7 @@ const Center = () => {
                                     <label className="label">
                                         <span className="label-text">Phone Number <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="number" placeholder="017********" className="input input-bordered w-full bg-white" name="phone" onKeyDown={(evt) => ["e", "E", "-"].includes(evt.key) && evt.preventDefault()} min="0" />
+                                    <input type="number" placeholder="+987********" className="input input-bordered w-full bg-white" name="phone" onKeyDown={(evt) => ["e", "E", "-"].includes(evt.key) && evt.preventDefault()} min="0" />
                                 </div>
                             </div>
                             <div className="form-control w-full">
@@ -496,20 +496,20 @@ const Center = () => {
                                 <label className="label">
                                     <span className="label-text">Delivery Address <span className='text-red-600'>&#42;</span></span>
                                 </label>
-                                <input type="text" placeholder="House-02, Road-12, Bonosree, Dhaka-1230" className="input input-bordered w-full bg-white" name="address" />
+                                <input type="text" placeholder="12/24, new street road" className="input input-bordered w-full bg-white" name="address" />
                             </div>
                             <div className='sm:flex sm:gap-5'>
                                 <div className="form-control w-full">
                                     <label className="label">
                                         <span className="label-text">City <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="Dhaka" className="input input-bordered w-full bg-white" name="city" />
+                                    <input type="text" placeholder="California" className="input input-bordered w-full bg-white" name="city" />
                                 </div>
                                 <div className="form-control w-full">
                                     <label className="label">
                                         <span className="label-text">Area <span className='text-red-600'>&#42;</span></span>
                                     </label>
-                                    <input type="text" placeholder="Bonosree" className="input input-bordered w-full bg-white" name="area" />
+                                    <input type="text" placeholder="New street" className="input input-bordered w-full bg-white" name="area" />
                                     {/* <label className="label"></label> */}
                                     <label className="label">
                                         <span className="label-text-alt"></span>
