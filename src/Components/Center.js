@@ -315,8 +315,15 @@ const Center = () => {
                     </div>
                     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                         <h1 className='text-4xl font-semibold'>Product Description</h1>
-                        <p className='py-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        <p className='py-5'>Introducing our latest product, the Smart Watch, the ultimate device for keeping you connected and on top of your daily routine. This sleek and stylish device is the perfect combination of functionality and fashion, making it a must-have accessory for anyone looking to enhance their daily life.
+
+                            With its intuitive touch screen display, you can easily navigate through all of your important information such as emails, messages, calls, and social media updates, all with a simple swipe of your finger. Plus, with built-in fitness tracking features, the Smart Watch allows you to monitor your activity levels, track your steps, and even monitor your heart rate, all in real-time.
+
+                            <br/> <br/>Designed to seamlessly integrate with your smartphone, the Smart Watch provides you with instant access to all of your important notifications, no matter where you are. Whether you're in a meeting, at the gym, or simply running errands, you'll never miss a beat with the Smart Watch.
+
+                            The Smart Watch is also incredibly durable and long-lasting, featuring a water-resistant design and a battery life that lasts for days on a single charge. And with its customizable watch face and interchangeable bands, you can easily personalize your Smart Watch to fit your unique style.
+
+                            Overall, the Smart Watch is the ultimate device for anyone looking to stay connected, stay active, and stay stylish, all in one compact and convenient package. Whether you're a busy professional, a fitness enthusiast, or just looking for a convenient way to stay on top of your daily routine, the Smart Watch has everything you need to stay ahead of the game.</p>
                         <a href="#order"><button type="" className='btn btn-success mt-5 text-white'>Order Now</button></a>
                     </div>
                 </div>
@@ -328,21 +335,21 @@ const Center = () => {
                             <img src={key} alt="" className='h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-bold'>Fast and secure</h1>
-                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p className='font-sans text-gray-500'>This watch keep your privacy secured and it also performs very fast.</p>
                             </div>
                         </div>
                         <div className='flex gap-3 justify-start border-r-2 border-b-2 p-5 border-gray-200' data-aos="zoom-in" data-aos-delay="700" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <img src={voice} alt="" className='h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-bold'>Voice Assistant</h1>
-                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p className='font-sans text-gray-500'>This watch has voice assistance which can be used for navigation and direction.</p>
                             </div>
                         </div>
                         <div className='flex gap-3 justify-start border-r-2 border-b-2 p-5 border-gray-200' data-aos="zoom-in" data-aos-delay="1100" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <img src={apps} alt="" className='h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-bold'>Apps you love</h1>
-                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p className='font-sans text-gray-500'>We have made the app user friendly so that any user can use it accordingly.</p>
                             </div>
                         </div>
                     </div>
@@ -352,21 +359,21 @@ const Center = () => {
                             <img src={like} alt="" className='h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-bold'>Stay in touch</h1>
-                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p className='font-sans text-gray-500'>You can always stay connected with your friends and family with the watch.</p>
                             </div>
                         </div>
                         <div className='flex gap-3 justify-start border-l-2 border-b-2 p-5 border-gray-200' data-aos="zoom-in" data-aos-delay="900" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <img src={person} alt="" className='h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-bold'>Designed for you</h1>
-                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p className='font-sans text-gray-500'>The watch is designed for all aged people so it will suit your personality for sure.</p>
                             </div>
                         </div>
                         <div className='flex gap-3 justify-start border-l-2 border-b-2 p-5 border-gray-200' data-aos="zoom-in" data-aos-delay="1300" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <img src={watch} alt="" className='h-12' />
                             <div>
                                 <h1 className='pt-0 mt-0 text-xl font-bold'>Precise timepiece</h1>
-                                <p className='font-sans text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p className='font-sans text-gray-500'>It shows 100% accurate time with live satelite interactivity and all tracking informations.</p>
                             </div>
                         </div>
                     </div>
@@ -375,7 +382,7 @@ const Center = () => {
             <section className='flex justify-center bg-white py-20'>
                 <div className='container'>
                     <h1 className='text-center text-6xl font-semibold' data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-sine">TECH SPECS</h1>
-                    <p className='text-center text-2xl text-gray-500 w-6/12 mx-auto py-4' data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200" data-aos-easing="ease-in-sine">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p className='text-center text-2xl text-gray-500 w-6/12 mx-auto py-4' data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200" data-aos-easing="ease-in-sine">We have implementend much more functionalities which you will definitely love.</p>
                     <div className='grid sm:grid-cols-2 lg:grid-cols-3 pt-20 pb-24 lg:gap-x-20 gap-y-10'>
                         <div className='border-b mx-5 sm:mx-16' data-aos="fade-right" data-aos-delay="1400" data-aos-duration="500" data-aos-easing="ease-in-sine">
                             <h1 className='text-2xl font-semibold'>Compatibility</h1>
@@ -524,7 +531,7 @@ const Center = () => {
                                     </label>
                                     <div className='flex justify-between items-center'>
                                         <div className='flex flex-col w-full'>
-                                        <input type="number" placeholder="0" className="input input-bordered w-3/12 bg-white" name="qty" min="0" onChange={(e) => setAmount(e.target.value * 500)} />
+                                            <input type="number" placeholder="0" className="input input-bordered w-3/12 bg-white" name="qty" min="0" onChange={(e) => setAmount(e.target.value * 500)} />
                                         </div>
                                         <p className='font-semibold w-full'>Amount: {amount}</p>
                                     </div>
